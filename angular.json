@@ -2,6 +2,8 @@
   "version": 2,
   "projects": {
     "demo": "apps/demo",
-    "demo-e2e": "apps/demo-e2e"
+    "demo-e2e": "apps/demo-e2e",
+    "local-storage": "libs/local-storage",
+    "temp-flag-router": "libs/temp-flag-router"
   }
 }

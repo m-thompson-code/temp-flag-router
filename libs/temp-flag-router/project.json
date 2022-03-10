@@ -1,0 +1,42 @@
+{
+  "projectType": "library",
+  "root": "libs/temp-flag-router",
+  "sourceRoot": "libs/temp-flag-router/src",
+  "prefix": "temp-flag-router",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:package",
+      "outputs": ["dist/libs/temp-flag-router"],
+      "options": {
+        "project": "libs/temp-flag-router/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/temp-flag-router/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/temp-flag-router/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/temp-flag-router"],
+      "options": {
+        "jestConfig": "libs/temp-flag-router/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/temp-flag-router/src/**/*.ts",
+          "libs/temp-flag-router/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

@@ -10,11 +10,14 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "esnext",
-    "lib": ["es2017", "dom"],
+    "lib": ["es2019", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@brown-cow/local-storage": ["libs/local-storage/src/index.ts"],
+      "@brown-cow/temp-flag-router": ["libs/temp-flag-router/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
